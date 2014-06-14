@@ -1,4 +1,4 @@
-Get-ChildItem "D:\My Documents\beeri\MTS" -Filter *.mts | `
+Get-ChildItem "$(My Documents)\MTS" -Filter *.mts | `
 Foreach-Object{
     $o = Get-Item $_.FullName
     $f = $o.DirectoryName + "\..\" + $o.BaseName + ".mp4"
